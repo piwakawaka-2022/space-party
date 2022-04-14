@@ -3,18 +3,15 @@
 body {
   text-align: center;
   font-family: 'Funny Party', sans-serif;
-  font-size: 3rem;
-  background-image: url('Images/calvin-background.jpg');
+  /* background-image: url('Images/calvin-background.jpg');
   background-size: fill;
-  background-position:top;
+  background-position:top; */
+  background-color: rgb(52, 52, 255);
 
 }
 
 h1 {
-  color: yellow
-}
-
-button {
-  padding: 24px;
-  
+  font-size: 6rem;
+  color: yellow;
+  -webkit-text-stroke: 1px rgb(255, 102, 42);
 }
