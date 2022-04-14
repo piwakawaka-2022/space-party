@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <h1>Space Party</h1>
+      <h1>Space Party!</h1>
       <button onClick={findSpaceImage}>Get a space image</button>
       {spaceImage && <img src={spaceImage.url} />}
     </div>
