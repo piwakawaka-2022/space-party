@@ -14,4 +14,10 @@ h1 {
   font-size: 6rem;
   color: yellow;
   -webkit-text-stroke: 1px rgb(255, 102, 42);
+  transition: all .3s  ease-in-out;
+
+}
+
+h1:hover {
+  transform: scale(0.9);
 }
