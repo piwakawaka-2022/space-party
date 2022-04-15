@@ -3,10 +3,11 @@ const router = express.Router()
 
 const db = require('../db/db')
 
+//localhost3000/api/v1/faces
 router.get('/', (req, res) => {
-  db.getWidgets()
-    .then((widgets) => {
-      res.json(widgets)
+  db.getFaces()
+    .then((faces) => {
+      res.json(faces)
       return null
     })
     .catch((err) => {

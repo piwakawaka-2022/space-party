@@ -1,13 +1,17 @@
 @import url('http://fonts.cdnfonts.com/css/funny-party');
 
-body {
-  text-align: center;
+html {
   font-family: 'Funny Party', sans-serif;
-  /* background-image: url('Images/calvin-background.jpg');
-  background-size: fill;
-  background-position:top; */
-  background-color: rgb(52, 52, 255);
+   background-image: url("Images/SpaceHome.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
 
+}
+
+body {
+  margin: 0;
 }
 
 h1 {
@@ -15,9 +19,143 @@ h1 {
   color: yellow;
   -webkit-text-stroke: 1px rgb(255, 102, 42);
   transition: all .3s  ease-in-out;
+  text-align: center;
 
 }
 
 h1:hover {
   transform: scale(0.9);
+}
+
+
+
+.navbar {
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+  height: 5vh;
+  
+}
+
+
+.space-container {
+ height: 100vh;
+ width: 100vh; 
+ background-size: cover;
+ top: 0;
+ left: 0;
+ width: calc(100vw);
+ min-height: calc(100vh);
+}
+
+  /* top: 0;
+  left: 0;
+  width: calc(100vw - 100px);
+  min-height: calc(100vh - 100px);
+  padding: 50px; */
+
+
+
+.image-buttons {
+   text-align: center;
+   margin-top: 40%;
+}
+
+button{
+  font-family: 'Funny Party', sans-serif;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 17px;
+  margin: 2px;
+}
+
+button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.navbar {
+  background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% );
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: rgb(235, 235, 235);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Set face image size */
+.face-container {
+  max-height: 20vh;
+  max-width: auto;
+  position: absolute;
+  transition: all .5s  ease-in-out;
+}
+
+.face-container:hover {
+  transform: scale(1.2);
+
+}
+
+.home-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-images img{
+  max-height: 45vh;
+  max-width: auto;
 }
